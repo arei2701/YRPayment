@@ -16,6 +16,10 @@ public final class YRPayment: NSObject, UITextFieldDelegate {
         }
     }
 
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("aaaa")
+        return true
+    }
     public var numberTextField: UITextField! {
         didSet {
             numberTextField.delegate = self
